@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eef1f5;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logo2 {
+    color: purple;
+}
+
+.searchbar input {
+    height: 7vh;
+    width: 500px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 2px solid lightgrey;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.awc a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: purple;
+
+    /* text-decoration: underline; */
+}
+
+.nav2 a:hover {
+    /* text-decoration: underline; */
+    font-size: 22px;
+}
+
+.navbar2 {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* font-weight: bolder; */
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    /* height: 60vh; */
+    display: flex;
+    background-color: #eef1f5;
+}
+
+.left {
+    width: 50%;
+    height: 70vh;
+    margin: 70px;
+    /* background-color: red; */
+}
+
+.p1 {
+    font-size: 50px;
+    font-weight: 20px;
+}
+
+.p2 {
+    font-size: 15px;
+    margin-top: 20px;
+    word-spacing: 5px;
+}
+
+.button {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+.p3 {
+    margin-top: 30PX;
+    font-size: 20px;
+}
+
+.gucci {
+    width: 80%;
+    height: 80vh;
+}
+
+.right {
+    width: 50%;
+    height: 70vh;
+    /* background-color: green; */
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    /* background-color: #eef1f5; */
+}
+
+.first {
+    width: 18%;
+    height: 55vh;
+    background-color: #eef1f5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cloths {
+    width: 100%;
+    height: 30vh;
+    padding-top: 20PX;
+}
+
+.Clothing {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Accessories {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Electronics {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Beauty {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.second {
+    width: 18%;
+    height: 55vh;
+    background-color: #eef1f5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shoes {
+    width: 100%;
+    height: 30vh;
+    padding-top: 20PX;
+}
+
+.third {
+    width: 18%;
+    height: 55vh;
+    background-color: #eef1f5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.laptop {
+    width: 100%;
+    height: 30vh;
+    padding-top: 20px;
+}
+
+.fourth {
+    width: 18%;
+    height: 55vh;
+    background-color: #eef1f5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.makeup {
+    width: 100%;
+    height: 30vh;
+    /* padding-top: 10px; */
+}
+
+
+
+.footer {
+    height: 80vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.footer1 {
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.f1 {
+    width: 50vw;
+    height: 65vh;
+    /* border: 2px solid black; */
+    padding-left: 40px;
+    color: grey;
+    /* padding-top: 40px; */
+    /* padding: 40px; */
+}
+
+.logos {
+    background-color: grey;
+    padding: 10px;
+}
+
+.l1 {
+    border: 2px solid black;
+    height: 3vh;
+    width: 2vw;
+}
+
+.logo3 {
+    color: black;
+    font-size: 35px;
+}
+
+
+h1 {
+    color: purple;
+
+}
+
+
+
+.f2 {
+    width: 20vw;
+    height: 65vh;
+    font-size: 15px;
+    padding-left: 40px;
+    color: grey;
+    /* border: 2px solid black; */
+}
+
+.footer2 {
+    background-color: rgb(50, 50, 50);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    color: grey;
+}
+
+.Clothing:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Accessories:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Electronics:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Beauty:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}

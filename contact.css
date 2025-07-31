@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+.header {
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eef1f5;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logo2 {
+    color: purple;
+}
+
+.searchbar input {
+    height: 7vh;
+    width: 500px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 2px solid lightgrey;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.awc a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: purple;
+
+    /* text-decoration: underline; */
+}
+
+.nav2 a:hover {
+    /* color: purple;
+    text-decoration: underline; */
+    font-size: 22px;
+}
+
+.navbar2 {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* font-weight: bolder; */
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.contact {
+    margin-top: 2px;
+    width: 100%;
+    /* height: 80vh; */
+    /* background-color: black; */
+}
+
+.container2 {
+    background-color: #eef1f5;
+    display: flex;
+}
+
+.left {
+    height: 60vh;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.left1 {
+    text-align: center;
+
+}
+
+.logoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    margin: 30px;
+    margin-left: 50px;
+}
+
+.font {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.font1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.right {
+    height: 60vh;
+    width: 70%;
+    /* background-color: aqua; */
+}
+
+.form {
+    margin: 80px;
+}
+
+.first {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.name {
+    width: 50%;
+    height: 6vh;
+    padding-left: 10px;
+}
+
+.email {
+    height: 6vh;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.sub {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    gap: 10px;
+    height: 6vh;
+    width: 96.5%;
+}
+
+.msg {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    /* padding-left: 10px; */
+    padding: 10px;
+    gap: 10px;
+    height: 20vh;
+    width: 96.5%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 350px;
+    gap: 10px;
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    background-color: purple;
+    border: none;
+}
+
+
+
+
+
+
+.footer {
+    height: 80vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.footer1 {
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.f1 {
+    width: 50vw;
+    height: 65vh;
+    /* border: 2px solid black; */
+    padding-left: 40px;
+    color: grey;
+    /* padding-top: 40px; */
+    /* padding: 40px; */
+}
+
+.logos {
+    background-color: grey;
+    padding: 10px;
+}
+
+.l1 {
+    border: 2px solid black;
+    height: 3vh;
+    width: 2vw;
+}
+
+.logo3 {
+    color: black;
+    font-size: 35px;
+}
+
+
+
+h1 {
+    color: purple;
+
+}
+
+
+
+.f2 {
+    width: 20vw;
+    height: 65vh;
+    font-size: 15px;
+    padding-left: 40px;
+    color: grey;
+    /* border: 2px solid black; */
+}
+
+.footer2 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    color: grey;
+}
+
+.Clothing:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Accessories:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Electronics:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
+
+.Beauty:hover {
+    text-shadow: 1px 1px 5px lightgray;
+    font-size: 25px;
+    transition: all 1s;
+}
