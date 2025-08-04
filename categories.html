@@ -2,109 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store - Home</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <title>Fashion Store - Categories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="categories.css">
 </head>
 
 <body>
 
   <div class="header">
 
-      <div class="navbar">
-        <div class="logo">
-            <p class="logo1">Fashion</p>
-            <p class="logo2">Store</p>
-        </div>
+    <div class="navbar">
+      <div class="logo">
+        <p class="logo1">Fashion</p>
+        <p class="logo2">Store</p>
+      </div>
 
-        <div class="searchbar">
-            <input type="text" placeholder="Search for products...">
-        </div>
-        <div class="awc">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-person" viewBox="0 0 16 16">
-                    <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                </svg>Account</a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                </svg>Wishlist</a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                </svg>Cart</a>
-        </div>
+      <div class="searchbar">
+        <input type="text" placeholder="Search for products...">
+      </div>
+      <div class="awc">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-person" viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+          </svg>Account</a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+          </svg>Wishlist</a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+          </svg>Cart</a>
+      </div>
 
     </div>
     <hr>
-    
-    <div class="navbar2">
-        <div class="nav2">
-            <div class="home">
-            <a href="index.html">Home</a>
 
-            </div>
-            <a href="about.html">About</a>
-            <a href="categories.html">Category</a>
-            <a href="contact.html">Contact</a>
+    <div class="navbar2">
+      <div class="nav2">
+        <div class="home">
+          <a href="index.html">Home</a>
+
         </div>
+        <a href="about.html">About</a>
+        <a href="categories.html">Category</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
 
   </div>
 
-    <div class="container">
-        <div class="left">
-            <p class="p1">Primium Quality Products</p>
-            <p class="p2">Lorem ipsum dolor sit, amet consectetur officiis dolores ex! Officia obcaecati libero corporis
-                aspernatur voluptatibus inventore? Repellat dignissimos odit repudiandae aliquid. Dolor a assumenda
-                totam nisi quasi.</p>
-            <button class="button">Explore Collection</button>
-            <p class="p3">Primium Materials</p>
-            <p class="p3">Handcrafted Quality</p>
-            <p class="p3">Lifetime Warranty</p>
 
-        </div>
 
-        <div class="right">
-            <img src="gucci.png" class="gucci">
-        </div>
+  <section class="hero-banner">
+    <img src="categories.jpg">
+    <div class="text">
+      <h1>Explore Our Fashion Store</h1>
+      <p>Shop top trending products in fashion, beauty, electronics and more.</p>
+    </div>
+  </section>
+
+
+  <div class="categories">
+
+    <!-- Clothing -->
+    <div class="category-card">
+      <img src="cloths.jpeg" alt="Clothing">
+      <h2>Clothing</h2>
+      <p>Explore trendy and comfortable fashion wear for all seasons.</p>
+      <a href="clothing.html">Shop Now</a>
     </div>
 
-    <div class="container2">
-        <div class="first">
-            <h1 class="Clothing">Clothing</h1>
-            <p class="description">there are availavle all thypes of cloths women's cloths or men's cloths or kidscloths
-            </p>
-            <img src="cloths.jpeg" class="cloths">
-        </div>
-        <div class="second">
-            <h1 class="Accessories">Accessories</h1>
-            <p class="description">there are available all types of Accessories like glasses, begs, jewellary, etc...
-            </p>
-            <img src="shoes.jpg" class="shoes">
-        </div>
-        <div class="third">
-            <h1 class="Electronics">Electronics</h1>
-            <p class="description">there are available all types of Electronics like phone, laptop, headphones, tv,
-                etc...</p>
-            <img src="laptop.png" class="laptop">
-        </div>
-        <div class="fourth">
-            <h1 class="Beauty">Beauty & Pesonal Care</h1>
-            <p class="description">there are availavle all thypes of Beauty & Pesonal Care products like makeup
-                & natural skincare products, etc...</p>
-            <img src="makeup.png" class="makeup">
-        </div>
+    <!-- Accessories -->
+    <div class="category-card">
+      <img src="shoes.jpg" alt="Accessories">
+      <h2>Accessories</h2>
+      <p>Stylish bags, watches, belts, and more to complete your look.</p>
+      <a href="accessories.html">Shop Now</a>
     </div>
 
-    <hr>
-    <div class="footer">
+    <!-- Electronics -->
+    <div class="category-card">
+      <img src="laptop.png" alt="Electronics">
+      <h2>Electronics</h2>
+      <p>Latest gadgets and devices for your smart lifestyle.</p>
+      <a href="electronics.html">Shop Now</a>
+    </div>
+
+    <!-- Beauty & Personal Care -->
+    <div class="category-card">
+      <img src="makeup.png" alt="Beauty & Personal Care">
+      <h2>Beauty & Personal Care</h2>
+      <p>Quality skincare, makeup, and grooming products just for you.</p>
+      <a href="beauty.html">Shop Now</a>
+    </div>
+
+  </div>
+
+
+
+
+
+  <section class="quick-tags">
+    <h3>Popular Searches</h3>
+    <div class="tags">
+      <a href="#">Men's Wear</a>
+      <a href="#">Smart Gadgets</a>
+      <a href="#">Makeup Kit</a>
+      <a href="#">Office Bags</a>
+      <a href="#">Headphones</a>
+    </div>
+  </section>
+
+  <section class="featured-products">
+    <h2>Top Picks in Clothing</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="enime-tshirt.jpg" alt="T-Shirt">
+        <p>Enime T-Shirt - ₹199</p>
+      </div>
+      <div class="product-card">
+        <img src="tshirt.jpeg" alt="T-Shirt">
+        <p> Men T-Shirt - ₹499</p>
+      </div>
+      <div class="product-card">
+        <img src="hoodie.jpg" alt="Hoodie">
+        <p>Hoodie - ₹399</p>
+      </div>
+      <div class="product-card">
+        <img src="jeans.jpg" alt="Jeans">
+        <p>Denim Jeans - ₹699</p>
+      </div>
+
+      <div class="product-card">
+        <img src="sheath_dress.jpg" alt="dress">
+        <p>Sheath dress - ₹599</p>
+      </div>
+      <div class="product-card">
+        <img src="casual_top.jpeg" alt="top">
+        <p>Female casual top - ₹299</p>
+      </div>
+      <div class="product-card">
+        <img src="trench_coat.jpg" alt="Hoodie">
+        <p>Trench coat - ₹899</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured-products">
+    <h2>Top Picks in Accessories</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="women-bag.jpeg" alt="bags">
+        <p>Women bag - ₹299</p>
+      </div>
+      <div class="product-card">
+        <img src="watchs.jpg" alt="watches">
+        <p> Watches - ₹399</p>
+      </div>
+      <div class="product-card">
+        <img src="sunglasses.jpg" alt="sunglasses">
+        <p>Sunglasses - ₹199</p>
+      </div>
+      <div class="product-card">
+        <img src="ring.jpg" alt="ring">
+        <p>Ring - ₹299</p>
+      </div>
+      <div class="product-card">
+        <img src="shoes1.jpeg" alt="shoes">
+        <p>Shoes - ₹499</p>
+      </div>
+      <div class="product-card">
+        <img src="perfume.jpg" alt="perfume">
+        <p>Perfume - ₹999</p>
+      </div>
+      <div class="product-card">
+        <img src="scarf.jpg" alt="scarf">
+        <p>Scarf - ₹499</p>
+      </div>
+    </div>
+  </section>
+  <section class="featured-products">
+    <h2>Top Picks in Electronics</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="smart-watch.jpg" alt="watch">
+        <p>Smart Watch - ₹499</p>
+      </div>
+      <div class="product-card">
+        <img src="headphone.jpeg" alt="headphone">
+        <p> Headphones - ₹799</p>
+      </div>
+      <div class="product-card">
+        <img src="phone.jpg" alt="phone">
+        <p>Smart Phone - ₹10,000</p>
+      </div>
+      <div class="product-card">
+        <img src="laptop-dell.jpg" alt="laptop-dell">
+        <p>Dell Laptop - ₹60,000</p>
+      </div>
+      <div class="product-card">
+        <img src="cameras.jpg" alt="cameras">
+        <p>Cameras - ₹90,999</p>
+      </div>
+      <div class="product-card">
+        <img src="smart-tv.jpg" alt="smart-tv">
+        <p>Smart TV - ₹40,000</p>
+      </div>
+      <div class="product-card">
+        <img src="tablet.jpg" alt="tablet">
+        <p>Tablet - ₹18,000</p>
+      </div>
+    </div>
+  </section>
+  <section class="featured-products">
+    <h2>Top Picks in Beauty & Personal Care</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="skin-care.jpeg" alt="skin-care">
+        <p>Skin Care Kit - ₹999</p>
+      </div>
+      <div class="product-card">
+        <img src="hair-care.jpg" alt="hair-care">
+        <p> Hair Care Kit - ₹2,100</p>
+      </div>
+      <div class="product-card">
+        <img src="shower-gel.jpeg" alt="shower-gel">
+        <p>Shower Gel - ₹299</p>
+      </div>
+      <div class="product-card">
+        <img src="sunscreen.jpg" alt="sunscreen">
+        <p>Sunscreen - ₹130</p>
+      </div>
+      <div class="product-card">
+        <img src="makeup.jpg" alt="makeup">
+        <p>  Blush & Concealer Palette - ₹399</p>
+      </div>
+      <div class="product-card">
+        <img src="makeup-brush.jpg" alt="makeup-brush">
+        <p>Makeup Brushes - ₹999</p>
+      </div>
+      <div class="product-card">
+        <img src="eyeshadow.jpeg" alt="eyeshadow">
+        <p>Eyeshadow Palette - ₹799</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <h3>What Our Customers Say</h3>
+    <div class="testimonial-boxes">
+      <div class="testimonial">
+        <p>"Great collection and fast delivery!"</p>
+        <span>— Riya, Delhi</span>
+      </div>
+      <div class="testimonial">
+        <p>"Loved the makeup products. Genuine & affordable."</p>
+        <span>— Anjali, Gujarat</span>
+      </div>
+      <div class="testimonial">
+        <p>"I was unsure at first, but the skincare kit I ordered is 100% genuine. Will shop again!"</p>
+        <span>— Kunal, Mumbai</span>
+      </div>
+      <div class="testimonial">
+        <p>"The electronics are totally worth it. Got my smartwatch in just 2 days!"</p>
+        <span>— Priya, Jaipur</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="newsletter">
+    <h2>Stay Updated!</h2>
+    <p>Subscribe to get offers and new arrivals directly to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+
+
+  <div class="footer">
         <div class="footer1">
             <div class="f1">
                 <!-- <div class="logo" style="margin-top: 70px; margin-bottom: 30px;">
@@ -249,6 +437,11 @@
             <p>Designed by Keya Patel & Jensi Dudhat</p>
         </div>
     </div>
+
+
+
+
+
 </body>
 
 </html>

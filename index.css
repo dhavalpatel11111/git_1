@@ -109,8 +109,13 @@ a:hover {
     font-size: 18px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(87, 87, 87);
+    background-color: grey;
+    transition: background-color 0.3s;
     color: white;
+}
+
+.button:hover {
+    background-color: rgb(65, 65, 65);
 }
 
 .p3 {
