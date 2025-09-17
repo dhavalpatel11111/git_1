@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store - Home</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Fashion Store - Accessories</title>
+    <link rel="stylesheet" href="accessories.css">
+
 </head>
-
 <body>
+       <div class="header">
 
-    <div class="header">
-
-        <div class="navbar">
-            <div class="logo">
-                <p class="logo1">Fashion</p>
-                <p class="logo2">Store</p>
-            </div>
+      <div class="navbar">
+        <div class="logo">
+            <p class="logo1">Fashion</p>
+            <p class="logo2">Store</p>
+        </div>
 
 
-            <div class="home">
-                <a href="index.html">Home</a>
+          <div class="home">
+            <a href="index.html">Home</a>
             </div>
             <a href="about.html">About</a>
             <a href="categories.html">Category</a>
             <a href="contact.html">Contact</a>
             <a href="login.html">Login</a>
 
-
-
+       
             <a href="cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
                     viewBox="0 0 16 16">
@@ -40,56 +37,59 @@
     </div>
     <hr>
 
-
-
-    <div class="container">
-        <div class="left">
-            <p class="p1">Primium Quality Products</p>
-            <p class="p2">Lorem ipsum dolor sit, amet consectetur officiis dolores ex! Officia obcaecati libero corporis
-                aspernatur voluptatibus inventore? Repellat dignissimos odit repudiandae aliquid. Dolor a assumenda
-                totam nisi quasi.</p>
-            <div class="explore">
-                <a href="categories.html">Explore Collection</a>
-            </div>
-            <p class="p3">Primium Materials</p>
-            <p class="p3">Handcrafted Quality</p>
-            <p class="p3">Lifetime Warranty</p>
-
-        </div>
-
-        <div class="right">
-            <img src="gucci.png" class="gucci">
-        </div>
+    <div class="accessorie">
+        <h2>Accessories</h2>
+        <p>Stylish bags, watches, belts, and more to complete your look.</p>
     </div>
 
-    <div class="container2">
-        <div class="first">
-            <h1 class="Clothing">Clothing</h1>
-            <p class="description">there are availavle all thypes of cloths women's cloths or men's cloths or kidscloths
-            </p>
-            <img src="cloths.jpeg" class="cloths">
-        </div>
-        <div class="second">
-            <h1 class="Accessories">Accessories</h1>
-            <p class="description">there are available all types of Accessories like glasses, begs, jewellary, etc...
-            </p>
-            <img src="shoes.jpg" class="shoes">
-        </div>
-        <div class="third">
-            <h1 class="Electronics">Electronics</h1>
-            <p class="description">there are available all types of Electronics like phone, laptop, headphones, tv,
-                etc...</p>
-            <img src="laptop.png" class="laptop">
-        </div>
-        <div class="fourth">
-            <h1 class="Beauty">Beauty & Pesonal Care</h1>
-            <p class="description">there are availavle all thypes of Beauty & Pesonal Care products like makeup
-                & natural skincare products, etc...</p>
-            <img src="makeup.png" class="makeup">
-        </div>
+    <section class="featured-products">
+    <h2>Top Picks in Accessories</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="women-bag.jpeg" alt="bags">
+        <p>Women bag - ₹299</p>
+        <button class="add-btn" onclick="addToCart('Women bag', 'women-bag.jpeg', '299')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="watchs.jpg" alt="watches">
+        <p> Watches - ₹399</p>
+        <button class="add-btn" onclick="addToCart('Watches', 'watchs.jpg', '399')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="sunglasses.jpg" alt="sunglasses">
+        <p>Sunglasses - ₹199</p>
+        <button class="add-btn" onclick="addToCart('Sunglasses ', 'sunglasses.jpg', '199')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="ring.jpg" alt="ring">
+        <p>Ring - ₹299</p>
+        <button class="add-btn" onclick="addToCart('Ring ', 'ring.jpg', '299')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="shoes1.jpeg" alt="shoes">
+        <p>Shoes - ₹499</p>
+        <button class="add-btn" onclick="addToCart('Shoes ', 'shoes1.jpeg', '499')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="perfume.jpg" alt="perfume">
+        <p>Perfume - ₹999</p>
+        <button class="add-btn" onclick="addToCart('Perfume', 'perfume.jpg', '999')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="scarf.jpg" alt="scarf">
+        <p>Scarf - ₹499</p>
+        <button class="add-btn" onclick="addToCart('Scarf', 'scarf.jpg', '499')">Add to Cart</button>
+      </div>
     </div>
+  </section>
 
-    <hr>
+
+
+
+
+
+
+    
     <div class="footer">
         <div class="footer1">
             <div class="f1">
@@ -167,7 +167,7 @@
 
 
             </div>
-
+            
             <div class="f2">
 
                 <h1
@@ -235,6 +235,19 @@
             <p>Designed by Keya Patel & Jensi Dudhat</p>
         </div>
     </div>
-</body>
 
+
+    <script>
+
+    function addToCart(name, image, price) {
+      // console.log(name);
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ name, image, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(name + " added to cart!");
+    }
+  </script>
+
+
+</body>
 </html>

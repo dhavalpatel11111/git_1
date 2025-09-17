@@ -53,136 +53,94 @@ a:hover {
     font-size: 22px;
 }
 
-
-.contact {
-    margin-top: 2px;
-    width: 100%;
-    /* height: 80vh; */
-    /* background-color: black; */
-}
-
-.container2 {
-    background-color: #eef1f5;
-    display: flex;
-}
-
-.left {
-    height: 60vh;
-    width: 30%;
-    margin-top: 50px;
-    margin-left: 50px;
-    /* background-color: blue; */
-    display: flex;
-}
-
-.left1 {
-    text-align: center;
-
-}
-
-.logoo {
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    background-color: purple;
-    border-radius: 5px;
-    /* border: 2px solid black; */
-    margin: 30px;
-    margin-left: 50px;
+    margin-top: 80px;
 }
 
-.font {
-    height: 50px;
-    margin-top: 30px;
+.login-container {
+    width: 350px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
 }
 
-.font1 {
-    font-size: 20px;
-    padding-bottom: 10px;
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
-
-.right {
-    height: 60vh;
-    width: 70%;
-    /* background-color: aqua; */
-}
-
-.form {
-    margin: 80px;
-}
-
-.first {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 10px;
+.input-group {
     margin-bottom: 15px;
-    gap: 10px;
+    text-align: left;
 }
 
-.name {
-    width: 50%;
-    height: 6vh;
-    padding-left: 10px;
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
 }
 
-.email {
-    height: 6vh;
-    width: 50%;
-    padding-left: 10px;
-}
-
-.sub {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 10px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    gap: 10px;
-    height: 6vh;
-    width: 96.5%;
-}
-
-.msg {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 10px;
-    margin-bottom: 15px;
-    /* padding-left: 10px; */
+.input-group input {
+    width: 100%;
     padding: 10px;
-    gap: 10px;
-    height: 20vh;
-    width: 96.5%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: black;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    margin-left: 350px;
-    gap: 10px;
-    width: 180px;
-    height: 45px;
-    border-radius: 5px;
-    color: white;
-    background-color: purple;
+    width: 100%;
+    padding: 10px;
     border: none;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(65, 65, 65);
+
+}
+
+.extra-links {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.extra-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
 }
 
 
 
-
-
+/* footer */
 
 .footer {
     height: 80vh;
     background-color: rgb(50, 50, 50);
+    margin-top: 80px;
 }
 
 .footer1 {

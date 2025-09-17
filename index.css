@@ -15,13 +15,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #eef1f5;
+    background-color: rgb(50, 50, 50);
 }
 
 .logo {
     display: flex;
     font-size: 40px;
     font-weight: 600;
+
 }
 
 .logo2 {
@@ -38,45 +39,23 @@
     box-shadow: 0 0 5px lightgrey;
 }
 
-.awc a {
+.navbar a{
+    color: white;
     text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-size: 20px;
+    font-size: 25px;
 }
+
+
+
 
 a:hover {
-    color: purple;
-
-    /* text-decoration: underline; */
-}
-
-.nav2 a:hover {
-    /* text-decoration: underline; */
     font-size: 22px;
 }
 
-.navbar2 {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(65, 65, 65);
-}
 
-.nav2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    /* font-weight: bolder; */
-}
 
-.nav2 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
+
+
 
 .container {
     /* height: 60vh; */
@@ -102,20 +81,23 @@ a:hover {
     word-spacing: 5px;
 }
 
-.button {
+.explore {
     margin-top: 30px;
     height: 50px;
     width: 200px;
-    font-size: 18px;
+    font-size: 25px;
     border: none;
     border-radius: 10px;
     background-color: grey;
     transition: background-color 0.3s;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.explore a{
 
-.button:hover {
-    background-color: rgb(65, 65, 65);
+    color: white;
+    text-decoration: none;
 }
 
 .p3 {
@@ -249,13 +231,13 @@ p {
     height: 65vh;
     /* border: 2px solid black; */
     padding-left: 40px;
-    color: grey;
+    color: white;
     /* padding-top: 40px; */
     /* padding: 40px; */
 }
 
 .logos {
-    background-color: grey;
+    background-color: white;
     padding: 10px;
 }
 
@@ -283,7 +265,7 @@ h1 {
     height: 65vh;
     font-size: 15px;
     padding-left: 40px;
-    color: grey;
+    color: white;
     /* border: 2px solid black; */
 }
 
@@ -296,7 +278,7 @@ h1 {
     flex-direction: column;
     font-size: 20px;
     gap: 10px;
-    color: grey;
+    color: white;
 }
 
 .Clothing:hover {

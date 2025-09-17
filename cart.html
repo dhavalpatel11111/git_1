@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+
+     <div class="header">
+
+      <div class="navbar">
+        <div class="logo">
+            <p class="logo1">Fashion</p>
+            <p class="logo2">Store</p>
+        </div>
+
+
+          <div class="home">
+            <a href="index.html">Home</a>
+            </div>
+            <a href="about.html">About</a>
+            <a href="categories.html">Category</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+
+       
+            <a href="cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>Cart</a>
+        </div>
+
+    </div>
+    <hr>
+
+    <h1 style="text-align: center; margin-bottom: 10px;">Your Cart</h1>
+    <div id="cart-items"
+        style="background-color: rgba(0, 0, 0, 0.08); display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 100px; padding: 10px; padding-top: 15px; padding-bottom: 15px;">
+    </div>
+    <h2 style="text-align: left; margin-bottom: 10px; background-color: rgba(00, 255, 00, 0.2); padding-right: 20px; padding-left: 20px;"
+        id="total"></h2>
+
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let container = document.getElementById("cart-items");
+            let total = 0;
+            // container.innerHTML = "";
+
+            cart.forEach((item, index) => {
+                total += parseInt(item.price);
+                container.innerHTML += `
+          <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+              <p>${item.name}</p>
+              <p>₹${item.price}</p>
+              <button onclick="removeItem(${index})">Remove</button>
+            </div>
+          </div>
+        `;
+            });
+
+            document.getElementById("total").innerText = "Total:  ₹" + total;
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            loadCart();
+        }
+
+        loadCart();
+    </script>
+</body>
+
+</html>
