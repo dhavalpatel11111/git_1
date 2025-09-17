@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store - Home</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Fashion Store - Beauty & Personal Care</title>
+    <link rel="stylesheet" href="beauty.css">
+
 </head>
 
 <body>
-
     <div class="header">
 
         <div class="navbar">
@@ -28,7 +28,6 @@
             <a href="login.html">Login</a>
 
 
-
             <a href="cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
                     viewBox="0 0 16 16">
@@ -40,56 +39,62 @@
     </div>
     <hr>
 
+    <div class="beauties">
+        <h2>Beauty & Personal Care</h2>
+        <p>Quality skincare, makeup, and grooming products just for you.</p>
+    </div>
 
 
-    <div class="container">
-        <div class="left">
-            <p class="p1">Primium Quality Products</p>
-            <p class="p2">Lorem ipsum dolor sit, amet consectetur officiis dolores ex! Officia obcaecati libero corporis
-                aspernatur voluptatibus inventore? Repellat dignissimos odit repudiandae aliquid. Dolor a assumenda
-                totam nisi quasi.</p>
-            <div class="explore">
-                <a href="categories.html">Explore Collection</a>
+
+    <section class="featured-products">
+        <h2>Top Picks in Beauty & Personal Care</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="skin-care.jpeg" alt="skin-care">
+                <p>Skin Care Kit - ₹999</p>
+                <button class="add-btn" onclick="addToCart('Skin Care Kit', 'skin-care.jpeg', '999')">Add to
+                    Cart</button>
             </div>
-            <p class="p3">Primium Materials</p>
-            <p class="p3">Handcrafted Quality</p>
-            <p class="p3">Lifetime Warranty</p>
+            <div class="product-card">
+                <img src="hair-care.jpg" alt="hair-care">
+                <p> Hair Care Kit - ₹2,100</p>
+                <button class="add-btn" onclick="addToCart('Hair Care Kit ', 'hair-care.jpg', '2,100')">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shower-gel.jpeg" alt="shower-gel">
+                <p>Shower Gel - ₹299</p>
+                <button class="add-btn" onclick="addToCart('Shower Gel ', 'shower-gel.jpeg', '299')">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="sunscreen.jpg" alt="sunscreen">
+                <p>Sunscreen - ₹130</p>
+                <button class="add-btn" onclick="addToCart('Sunscreen', 'sunscreen.jpg', '130')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="makeup.jpg" alt="makeup">
+                <p> Blush & Concealer Palette - ₹399</p>
+                <button class="add-btn" onclick="addToCart('Blush & Concealer Palette  ', 'makeup.jpg', '399')">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="makeup-brush.jpg" alt="makeup-brush">
+                <p>Makeup Brushes - ₹999</p>
+                <button class="add-btn" onclick="addToCart('Makeup Brushes  ', 'makeup-brush.jpg', '999')">Add to
+                    Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="eyeshadow.jpeg" alt="eyeshadow">
+                <p>Eyeshadow Palette - ₹799</p>
+                <button class="add-btn" onclick="addToCart('Eyeshadow Palette ', 'eyeshadow.jpeg', '799')">Add to
+                    Cart</button>
+            </div>
+        </div>
+    </section>
 
-        </div>
 
-        <div class="right">
-            <img src="gucci.png" class="gucci">
-        </div>
-    </div>
 
-    <div class="container2">
-        <div class="first">
-            <h1 class="Clothing">Clothing</h1>
-            <p class="description">there are availavle all thypes of cloths women's cloths or men's cloths or kidscloths
-            </p>
-            <img src="cloths.jpeg" class="cloths">
-        </div>
-        <div class="second">
-            <h1 class="Accessories">Accessories</h1>
-            <p class="description">there are available all types of Accessories like glasses, begs, jewellary, etc...
-            </p>
-            <img src="shoes.jpg" class="shoes">
-        </div>
-        <div class="third">
-            <h1 class="Electronics">Electronics</h1>
-            <p class="description">there are available all types of Electronics like phone, laptop, headphones, tv,
-                etc...</p>
-            <img src="laptop.png" class="laptop">
-        </div>
-        <div class="fourth">
-            <h1 class="Beauty">Beauty & Pesonal Care</h1>
-            <p class="description">there are availavle all thypes of Beauty & Pesonal Care products like makeup
-                & natural skincare products, etc...</p>
-            <img src="makeup.png" class="makeup">
-        </div>
-    </div>
-
-    <hr>
     <div class="footer">
         <div class="footer1">
             <div class="f1">
@@ -235,6 +240,20 @@
             <p>Designed by Keya Patel & Jensi Dudhat</p>
         </div>
     </div>
+
+
+    <script>
+
+    function addToCart(name, image, price) {
+      // console.log(name);
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ name, image, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(name + " added to cart!");
+    }
+  </script>
+
+
 </body>
 
 </html>
