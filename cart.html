@@ -11,24 +11,24 @@
 <body>
 
 
-     <div class="header">
+    <div class="header">
 
-      <div class="navbar">
-        <div class="logo">
-            <p class="logo1">Fashion</p>
-            <p class="logo2">Store</p>
-        </div>
+        <div class="navbar">
+            <div class="logo">
+                <p class="logo1">Fashion</p>
+                <p class="logo2">Store</p>
+            </div>
 
 
-          <div class="home">
-            <a href="index.html">Home</a>
+            <div class="home">
+                <a href="index.html">Home</a>
             </div>
             <a href="about.html">About</a>
             <a href="categories.html">Category</a>
             <a href="contact.html">Contact</a>
             <a href="login.html">Login</a>
 
-       
+
             <a href="cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
                     viewBox="0 0 16 16">
@@ -52,7 +52,7 @@
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
             let container = document.getElementById("cart-items");
             let total = 0;
-            // container.innerHTML = "";
+            container.innerHTML = "";
 
             cart.forEach((item, index) => {
                 total += parseInt(item.price);

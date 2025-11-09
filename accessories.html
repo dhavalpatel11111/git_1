@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,26 @@
     <link rel="stylesheet" href="accessories.css">
 
 </head>
+
 <body>
-       <div class="header">
+    <div class="header">
 
-      <div class="navbar">
-        <div class="logo">
-            <p class="logo1">Fashion</p>
-            <p class="logo2">Store</p>
-        </div>
+        <div class="navbar">
+            <div class="logo">
+                <p class="logo1">Fashion</p>
+                <p class="logo2">Store</p>
+            </div>
 
 
-          <div class="home">
-            <a href="index.html">Home</a>
+            <div class="home">
+                <a href="index.html">Home</a>
             </div>
             <a href="about.html">About</a>
             <a href="categories.html">Category</a>
             <a href="contact.html">Contact</a>
             <a href="login.html">Login</a>
 
-       
+
             <a href="cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3"
                     viewBox="0 0 16 16">
@@ -43,45 +45,45 @@
     </div>
 
     <section class="featured-products">
-    <h2>Top Picks in Accessories</h2>
-    <div class="product-row">
-      <div class="product-card">
-        <img src="women-bag.jpeg" alt="bags">
-        <p>Women bag - ₹299</p>
-        <button class="add-btn" onclick="addToCart('Women bag', 'women-bag.jpeg', '299')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="watchs.jpg" alt="watches">
-        <p> Watches - ₹399</p>
-        <button class="add-btn" onclick="addToCart('Watches', 'watchs.jpg', '399')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="sunglasses.jpg" alt="sunglasses">
-        <p>Sunglasses - ₹199</p>
-        <button class="add-btn" onclick="addToCart('Sunglasses ', 'sunglasses.jpg', '199')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="ring.jpg" alt="ring">
-        <p>Ring - ₹299</p>
-        <button class="add-btn" onclick="addToCart('Ring ', 'ring.jpg', '299')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="shoes1.jpeg" alt="shoes">
-        <p>Shoes - ₹499</p>
-        <button class="add-btn" onclick="addToCart('Shoes ', 'shoes1.jpeg', '499')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="perfume.jpg" alt="perfume">
-        <p>Perfume - ₹999</p>
-        <button class="add-btn" onclick="addToCart('Perfume', 'perfume.jpg', '999')">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="scarf.jpg" alt="scarf">
-        <p>Scarf - ₹499</p>
-        <button class="add-btn" onclick="addToCart('Scarf', 'scarf.jpg', '499')">Add to Cart</button>
-      </div>
-    </div>
-  </section>
+        <h2>Top Picks in Accessories</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="women-bag.jpeg" alt="bags">
+                <p>Women bag - ₹299</p>
+                <button class="add-btn" onclick="addToCart('Women bag', 'women-bag.jpeg', '299')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="watchs.jpg" alt="watches">
+                <p> Watches - ₹399</p>
+                <button class="add-btn" onclick="addToCart('Watches', 'watchs.jpg', '399')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="sunglasses.jpg" alt="sunglasses">
+                <p>Sunglasses - ₹199</p>
+                <button class="add-btn" onclick="addToCart('Sunglasses ', 'sunglasses.jpg', '199')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="ring.jpg" alt="ring">
+                <p>Ring - ₹299</p>
+                <button class="add-btn" onclick="addToCart('Ring ', 'ring.jpg', '299')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shoes1.jpeg" alt="shoes">
+                <p>Shoes - ₹499</p>
+                <button class="add-btn" onclick="addToCart('Shoes ', 'shoes1.jpeg', '499')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="perfume.jpg" alt="perfume">
+                <p>Perfume - ₹999</p>
+                <button class="add-btn" onclick="addToCart('Perfume', 'perfume.jpg', '999')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="scarf.jpg" alt="scarf">
+                <p>Scarf - ₹499</p>
+                <button class="add-btn" onclick="addToCart('Scarf', 'scarf.jpg', '499')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -89,7 +91,7 @@
 
 
 
-    
+
     <div class="footer">
         <div class="footer1">
             <div class="f1">
@@ -167,7 +169,7 @@
 
 
             </div>
-            
+
             <div class="f2">
 
                 <h1
@@ -239,15 +241,16 @@
 
     <script>
 
-    function addToCart(name, image, price) {
-      // console.log(name);
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ name, image, price });
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert(name + " added to cart!");
-    }
-  </script>
+        function addToCart(name, image, price) {
+            // console.log(name);
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ name, image, price });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(name + " added to cart!");
+        }
+    </script>
 
 
 </body>
+
 </html>

@@ -57,7 +57,7 @@
             </div>
             <div class="product-card">
                 <img src="hair-care.jpg" alt="hair-care">
-                <p> Hair Care Kit - ₹2,100</p>
+                <p> Hair Care Kit - ₹2100</p>
                 <button class="add-btn" onclick="addToCart('Hair Care Kit ', 'hair-care.jpg', '2,100')">Add to
                     Cart</button>
             </div>
@@ -244,14 +244,14 @@
 
     <script>
 
-    function addToCart(name, image, price) {
-      // console.log(name);
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ name, image, price });
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert(name + " added to cart!");
-    }
-  </script>
+        function addToCart(name, image, price) {
+            // console.log(name);
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ name, image, price });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(name + " added to cart!");
+        }
+    </script>
 
 
 </body>
